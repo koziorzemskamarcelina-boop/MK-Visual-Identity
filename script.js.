@@ -1,0 +1,32 @@
+function navigateTo(page) {
+  // Tutaj możemy dodać logiczne przekierowanie lub jakieś działania w zależności od strony.
+  switch(page) {
+    case 'about':
+      alert('Zostaniesz przekierowany do sekcji "O nas".');
+      break;
+    case 'services':
+      alert('Zostaniesz przekierowany do sekcji "Usługi".');
+      break;
+    case 'portfolio':
+      window.location.href = '/portfolio.html'; // Przykład przekierowania na stronę portfolio
+      break;
+    case 'contact':
+      window.location.href = '/contact.html'; // Przykład przekierowania na stronę kontakt
+      break;
+    case 'branding':
+      alert('Przechodzisz do strony Branding!');
+      break;
+    case 'social-media':
+      alert('Przechodzisz do strony Social Media!');
+      break;
+    case 'web':
+      alert('Przechodzisz do strony Strony WWW!');
+      break;
+    case 'identity':
+      alert('Przechodzisz do strony Identyfikacja!');
+      break;
+    default:
+      console.log('Nieznana strona');
+      break;
+  }
+}
